@@ -37,7 +37,7 @@ function CartModal() {
                     cart.map(
                         (product) =>
                             product.quantity !== 0 && (
-                                <Container className="d-flex">
+                                <Container className="d-flex" key={product.id}>
                                     <Image
                                         style={{ width: '5rem' }}
                                         src={product.img}
